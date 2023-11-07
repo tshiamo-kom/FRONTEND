@@ -1,0 +1,30 @@
+<h3 style="text-align: center;">Create a New Task</h3>
+<p style="text-align: center;">Please fill in every required field.</p>
+
+<form (submit)="onaddtask(task)" #task="ngForm" style="text-align: center;">
+    <label for="task">Task Name</label><br/>
+    <input type="text"
+ngModel name="task"
+placeholder="Enter Task Name (required)"
+required
+minlength="5"
+pattern="^[a-zA-Z0-9\s_-]+$"
+    #task="ngModel"/><br/>
+    <label for="description">Task Description</label><br/>
+    <input type="text"
+ngModel name="description"
+placeholder="Enter Task Description (required)"
+required
+minlength="5"
+pattern="^[a-zA-Z0-9\s_-]+$"
+    #task="ngModel"/><br/>
+    <label for="status">Task Status</label><br/>
+    <input type="text"
+ngModel name="task"
+placeholder="Enter Task Status (required)"
+required
+minlength="5"
+pattern="^[a-zA-Z0-9\s_-]+$"
+    #task="ngModel"/><br/>
+<button type="submit">Add Task</button>
+</form>

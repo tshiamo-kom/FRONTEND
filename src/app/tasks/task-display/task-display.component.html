@@ -1,0 +1,6 @@
+<div *ngFor="let task">
+    {{task.task}}
+    {{task.description}}
+    {{task.status}}
+<button (click)="ondelete(task._task)">Delete</button>
+</div>
